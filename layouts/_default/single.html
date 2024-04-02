@@ -1,0 +1,11 @@
+This page is bundled with:<br>
+{{ range .Translations }}
+	- {{ .Lang }}<br>
+{{ end }}
+
+This page has resources:<br>
+{{ range .Resources }}
+	- {{ . }}<br>
+{{ end }}
+
+{{ .Content }}
